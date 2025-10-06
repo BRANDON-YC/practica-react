@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Capítulo 1 — JS Puro: Todos</title>
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Todos (JS Puro)</h1>
+    <p>Objetivo: practicar DOM, eventos y estado + <code>localStorage</code>.</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <form id="todo-form">
+        <input id="todo-input" placeholder="Nueva tarea..." aria-label="Nueva tarea"/>
+        <button type="submit">Agregar</button>
+      </form>
+      <div class="filters">
+        <button data-filter="all" class="active">Todas</button>
+        <button data-filter="pending">Pendientes</button>
+        <button data-filter="done">Hechas</button>
+      </div>
+      <div class="stats">
+        <span id="count-total">0</span> totales —
+        <span id="count-done">0</span> hechas
+      </div>
+    </section>
+
+    <ul id="todo-list" class="list"></ul>
+  </main>
+
+  <footer>
+    <small>Capítulo 1 • JS puro</small>
+  </footer>
+
+  <script src="./main.js" type="module"></script>
+</body>
+</html>

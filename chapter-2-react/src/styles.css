@@ -1,0 +1,12 @@
+:root { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+body { margin: 0; padding: 1.5rem; }
+header { margin-bottom: 1rem; }
+.controls { display: grid; gap: .75rem; margin-bottom: 1rem; }
+form { display: flex; gap: .5rem; }
+input { flex: 1; padding: .6rem .8rem; border: 1px solid #ddd; border-radius: .5rem; }
+button { padding: .6rem .9rem; border: 1px solid #ddd; border-radius: .5rem; background: #fff; cursor: pointer; }
+button.active { border-color: black; font-weight: 600; }
+.list { list-style: none; padding: 0; display: grid; gap: .5rem; }
+.item { display: flex; align-items: center; gap: .5rem; padding: .6rem .8rem; border: 1px solid #eee; border-radius: .5rem; }
+.item.done { opacity: .7; text-decoration: line-through; }
+footer { margin-top: 2rem; color: #666; }
